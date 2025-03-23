@@ -1,0 +1,124 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yashraj G Wagh | Portfolio</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">Yashraj's Portfolio</div>
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="/static/resume.pdf" target="_blank">Resume</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+<section id ="hero" class="hero">
+    <div class="hero-content">
+        <img src="{% static 'images/photo.jpg' %}" alt="Yashraj G Wagh">
+        <h1>Yashraj Wagh</h1>
+        <p>Information Technology Engineer | Web Developer </p>
+        <!-- <p class="tagline">Passionate about coding, analytics, and crafting digital experiences.</p> -->
+        <div class="buttons">
+            <a href="{% static 'resume.pdf' %}" class="btn primary-btn" target="_blank">Download Resume</a>
+            <a href="#contact" class="btn secondary-btn">Contact Me</a>
+        </div>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/yashraj-wagh-248747221" >
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="mailto:waghyashraj112002@gmail.com">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+    <!-- About Section -->
+    <section id="about">
+        <img src="/static/images/profile.png" alt="Yashraj">
+        <div class="about-text">
+            <h2>About Me</h2>
+            <p>I am Yashraj G Wagh, an established IT Engineer with expertise in Python, Java, SQL, Web Development, and Data Science. Passionate about problem-solving and innovation, I have worked on full-stack projects and data analytics, including an internship at Sumago InfoTech Solutions.
+
+                With a strong foundation in Machine Learning, EDA, and Web Technologies, I thrive in collaborative environments and have taken leadership roles as an NSS Coordinator and Class Representative. I am eager to apply my skills to real-world projects and contribute to impactful solutions.</p>
+        </div>
+    </section>
+
+   <!-- Projects Section -->
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-container">
+        <div class="project-card">
+            <h3>Portfolio Website</h3>
+            <p>A responsive personal portfolio built with HTML, CSS, Django, and Bootstrap to showcase my skills, projects, and certifications.</p>
+        </div>
+        <div class="project-card">
+            <h3>Touchless Heart-rate Prediction</h3>
+            <p>Developed a computer vision-based system using OpenCV and Python to detect and estimate heart rate in real-time.</p>
+        </div>
+        <div class="project-card">
+            <h3>Diwali Sales Analysis</h3>
+            <p>Performed exploratory data analysis (EDA) using Python, Pandas, Numpy, and Seaborn to derive business insights from sales data.</p>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Certifications Section -->
+<section id="certifications" class="full-screen-section">
+    <h2>Certifications</h2>
+    <div class="certifications-container">
+        <div class="cert-card">
+            <i class="fas fa-code"></i>
+            <span>Web Development</span>
+        </div>
+        <div class="cert-card">
+            <i class="fab fa-python"></i>
+            <span>Python Programming</span>
+        </div>
+        <div class="cert-card">
+            <i class="fas fa-chart-line"></i>
+            <span>Data Science & Analytics</span>
+        </div>
+    </div>
+</section>
+
+
+<!-- Contact Section -->
+<section id="contact" class="full-screen-section contact-section">
+    <h2>Contact Me</h2>
+    <div class="contact-info">
+        <p><i class="fas fa-envelope"></i> waghyashraj112002@gmail.com</p>
+        <p><i class="fas fa-phone"></i> +91-8605753006</p>
+        <p>
+            <a href="https://www.linkedin.com/in/yashraj-wagh-248747221" target="_blank">
+                <i class="fab fa-linkedin"></i> LinkedIn Profile
+            </a>
+        </p>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Yashraj G Wagh. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
